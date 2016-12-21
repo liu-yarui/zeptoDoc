@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>$.map</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>$.map</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>$.map(collection, function(item, index){ ... })   ⇒ collection<h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>通过遍历集合中的元素，返回通过迭代函数的全部结果，（愚人码头注：一个新数组）null 和 undefined 将被过滤掉。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

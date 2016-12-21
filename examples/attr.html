@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>attr</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>attr</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>attr(name)   ⇒ string<br>
+attr(name, value)   ⇒ self<br>
+attr(name, function(index, oldValue){ ... })   ⇒ self<br>
+attr({ name: value, name2: value2, ... })   ⇒ self<h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>读取或设置dom的属性。如果没有给定value参数，则读取对象集合中第一个元素的属性值。当给定了value参数。则设置对象集合中所有元素的该属性的值。当value参数为null，那么这个属性将被移除(类似removeAttr)，多个属性可以通过对象键值对的方式进行设置。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

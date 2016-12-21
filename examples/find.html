@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>find</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>find</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>find(selector)   ⇒ collection<br>
+find(collection)   ⇒ collection v1.0+<br>
+find(element)   ⇒ collection v1.0+
+<h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>在当对象前集合内查找符合CSS选择器的每个元素的后代元素。<br>
+
+如果给定Zepto对象集合或者元素，过滤它们，只有当它们在当前Zepto集合对象中时，才回被返回。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

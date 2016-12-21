@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>not</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>not</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>not(selector)   ⇒ collection<br>
+not(collection)   ⇒ collection<br>
+not(function(index){ ... })   ⇒ collection<h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>过滤当前对象集合，获取一个新的对象集合，它里面的元素不能匹配css选择器。如果另一个参数为Zepto对象集合，那么返回的新Zepto对象中的元素都不包含在该参数对象中。如果参数是一个函数。仅仅包含函数执行为false值得时候的元素，函数的 this 关键字指向当前循环元素。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

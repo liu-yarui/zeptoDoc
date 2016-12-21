@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>get</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>get</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>get()   ⇒ array<br>
+get(index)   ⇒ DOM node<h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>从当前对象集合中获取所有元素或单个元素。当index参数不存在的时，以普通数组的方式返回所有的元素。当指定index时，只返回该置的元素。这点与eq不同，该方法返回的是DOM节点，不是Zepto对象集合。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

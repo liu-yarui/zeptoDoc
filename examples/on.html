@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>on</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>on</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>on(type, [selector], function(e){ ... })   ⇒ self<br>
+on(type, [selector], [data], function(e){ ... })   ⇒ self v1.1+<br>
+on({ type: handler, type2: handler2, ... }, [selector])   ⇒ self<br>
+on({ type: handler, type2: handler2, ... }, [selector], [data])   ⇒ self v1.1+<h4><br>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>添加事件处理程序到对象集合中得元素上。多个事件可以通过空格的字符串方式添加，或者以事件类型为键、以函数为值的对象 方式。如果给定css选择器，当事件在匹配该选择器的元素上发起时，事件才会被触发（愚人码头注：即事件委派，或者说事件代理）。
+
+如果给定data参数，这个值将在事件处理程序执行期间被作为有用的 event.data 属性
+
+事件处理程序在添加该处理程序的元素、或在给定选择器情况下匹配该选择器的元素的上下文中执行(愚人码头注：this指向触发事件的元素)。 当一个事件处理程序返回false，preventDefault() 和 stopPropagation()被当前事件调用的情况下，  将防止默认浏览器操作，如链接。
+
+如果false 在回调函数的位置上作为参数传递给这个方法， 它相当于传递一个函数，这个函数直接返回false。（愚人码头注：即将 false 当作 function(e){ ... } 的参数，作为 function(){ return false; } 的简写形式，例如： $("a.disabled").on("click", false);这相当于$("a.disabled").on("click", function(){ return false; } );）</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

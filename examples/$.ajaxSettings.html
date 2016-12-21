@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>$.ajaxSettings</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>$.ajaxSettings</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon><h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>一个包含Ajax请求的默认设置的对象。大部分的设置在 $.ajax中已经描述。以下设置为全局非常有用：
+
+timeout (默认： 0)：对Ajax请求设置一个非零的值指定一个默认的超时时间，以毫秒为单位。
+global (默认： true)：设置为false。以防止触发Ajax事件。
+xhr (默认：XMLHttpRequest factory)：设置为一个函数，它返回XMLHttpRequest实例(或一个兼容的对象)
+accepts: 从服务器请求的MIME类型，指定dataType值：
+script: “text/javascript, application/javascript”
+json: “application/json”
+xml: “application/xml, text/xml”
+html: “text/html”
+text: “text/plain”
+</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

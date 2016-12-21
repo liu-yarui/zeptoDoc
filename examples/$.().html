@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>$.()</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>$()</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>$(selector, [context])   ⇒ collection<h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>通过执行css选择器，包装dom节点，或者通过一个html字符串创建多个元素 来创建一个Zepto集合对象。
+
+Zepto集合是一个类似数组的对象，它具有链式方法来操作它指向的DOM节点，除了$( Zepto)对象上的直接方法外(如$.extend)，文档对象中的所有方法都是集合方法。
+
+如果选择器中存在content参数(css选择器，dom，或者Zepto集合对象)，那么只在所给的节点背景下进行css选择器；这个功能和使用$(context).find(selector)是一样的。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

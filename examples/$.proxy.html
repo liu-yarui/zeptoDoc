@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>$.proxy</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>$.proxy</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>$.proxy(fn, context)   ⇒ function<br>
+$.proxy(fn, context, [additionalArguments...])   ⇒ function v1.1.4+<br>
+$.proxy(context, property)   ⇒ function<br>
+$.proxy(context, property, [additionalArguments...])   ⇒ function v1.1.4+
+<h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>接受一个函数，然后返回一个新函数，并且这个新函数始终保持了特定的上下文(context)语境，新函数中this指向context参数。另外一种形式，原始的function是从上下文(context)对象的特定属性读取。
+
+如果传递超过2个的额外参数，它们被用于 传递给fn参数的函数 引用。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

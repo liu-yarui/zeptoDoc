@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>submit</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>submit</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon>submit()   ⇒ self<br>
+submit(function(e){ ... })   ⇒ self
+<h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>为 "submit" 事件绑定一个处理函数，或者触发元素上的 "submit" 事件。当没有给定function参数时，触发当前表单“submit”事件，并且执行默认的提交表单行为，除非调用了 preventDefault()。
+
+当给定function参数时，在当前元素上它简单得为其在“submit”事件绑定一个处理函数。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>

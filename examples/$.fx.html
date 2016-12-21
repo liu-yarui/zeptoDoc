@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content=initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width>
+	<title>$.fx</title>
+	<link rel=stylesheet type=text/css href=../css/mui.min.css>
+	<style type=text/css>
+		.fCon{
+			color: #ea23ae;
+		}
+
+		.border{
+			width: 80%;
+			margin: 0px auto;
+		}
+
+		#bBtn{
+			width: 56px;
+			height: 30px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<header class=mui-bar mui-bar-nav>
+		<button type=button class=mui-btn mui-btn-outlined id=bBtn>返回</button>
+    	<p class=mui-title>zeptoDoc</p>
+    </header>
+    <br>
+    <div class=mui-content border>
+    	<h4 class=fName>函数名称<h4>
+		<h2>$.fx</h2>
+		<br>
+		<h4>用法</h4>
+		<h4 class=fCon><h4>
+		<br>
+		<h4>释义</h4>
+		<h4 class=fCon>全局地动画设置：
+
+$.fx.off (在支持css transition 的浏览器中默认为false)：设置true来禁止所有animate() transitions。
+
+$.fx.speeds：用来设置动画时间的对象。
+
+_default (400 ms)
+fast (200 ms)
+slow (600 ms)
+改变现有值或者添加一个新属性去影响使用一个字符串来设置时间的动画。</h4>
+	</div>
+	<script type=text/javascript>
+		var btn = document.getElementById(bBtn);
+		btn.addEventListener(click,function(){
+			window.history.back();
+		},false);
+	</script>
+</body>
+</html>
